@@ -1,13 +1,20 @@
 /********** Template CSS **********/
+@font-face {
+    font-family: "harlekin";
+    src: url("/font/harlekin.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
-    --primary: #E88F2A;
+    --primary: #A55E17;
     --secondary: #FAF3EB;
     --light: #FFFFFF;
-    --dark: #2B2825;
+    --dark: ##472D1E;
 }
 
+
 .font-secondary {
-    font-family: 'Pacifico', cursive;
+    font-family: "harlekin", cursive;
 }
 
 h1,
@@ -316,4 +323,43 @@ h6,
 
 .display-for-team {
     display:none
+}
+
+
+@media (max-width: 991.98px) {
+    .logo-nav  {
+        width: 5rem;
+        height: 5rem;
+        filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+    }
+    .logo-top {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo-nav {
+        display: none;
+    }
+    .logo-top {
+        width: 5rem;
+        height: 5rem;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .logo-footer {
+        width: 7.5rem;
+        height: 7.5rem;
+        filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+    }
+}
+
+@media (min-width: 992px) {
+    .logo-footer {
+        width: 10rem;
+        height: 10rem;
+        filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(305deg) brightness(103%) contrast(101%);
+    }    
 }
